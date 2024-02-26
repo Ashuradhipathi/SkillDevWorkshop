@@ -7,4 +7,6 @@ NLP is a subfield of artificial intelligence, and it’s all about allowing comp
 
 ## Installation
 
-`python (venv) $ python -m spacy download en_core_web_sm`
+```python 
+(venv) $ python -m spacy download en_core_web_sm
+```
