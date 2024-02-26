@@ -192,3 +192,83 @@ too
 
 >>> print([token for token in about_doc if not token.is_stop])
 ```
+
+## Lemmatization
+
+Lemmatization is the process of reducing inflected forms of a word while still ensuring that the reduced form belongs to the language. This reduced form, or root word, is called a lemma.
+
+For example, organizes, organized and organizing are all forms of organize. Here, organize is the lemma. The inflection of a word allows you to express different grammatical categories, like tense (organized vs organize), number (trains vs train), and so on. Lemmatization is necessary because it helps you reduce the inflected forms of a word so that they can be analyzed as a single item. It can also help you normalize the text.
+
+```python
+>>> for token in conference_help_doc:
+...     if str(token) != str(token.lemma_):
+...         print(f"{str(token):>20} : {str(token.lemma_)}")
+...
+                  is : be
+                  He : he
+               keeps : keep
+          organizing : organize
+             meetups : meetup
+               talks : talk
+```
+## Word Frequency
+
+```python
+from collections import Counter
+
+>>> words = [
+...     token.text
+...     for token in complete_doc
+...     if not token.is_stop and not token.is_punct
+... ]
+
+>>> print(Counter(words).most_common(5))
+[('Gus', 4), ('London', 3), ('Natural', 3), ('Language', 3), ('Processing', 3)]
+```
+
+Four out of five of the most common words are stop words that don’t really tell you much about the summarized text. This is why stop words are often considered noise for many applications.
+
+## Part of speech
+Part of speech or POS is a grammatical role that explains how a particular word is used in a sentence. There are typically eight parts of speech:
+
+Noun
+Pronoun
+Adjective
+Verb
+Adverb
+Preposition
+Conjunction
+Interjection
+Part-of-speech tagging is the process of assigning a POS tag to each token depending on its usage in the sentence. POS tags are useful for assigning a syntactic category like noun or verb to each word.
+
+```python
+>>> about_doc = nlp(about_text)
+>>> for token in about_doc:
+...     print(
+...         f"""
+... TOKEN: {str(token)}
+... =====
+... TAG: {str(token.tag_):10} POS: {token.pos_}
+... EXPLANATION: {spacy.explain(token.tag_)}"""
+...     )
+...
+TOKEN: Gus
+=====
+TAG: NNP        POS: PROPN
+EXPLANATION: noun, proper singular
+
+TOKEN: Proto
+=====
+TAG: NNP        POS: PROPN
+EXPLANATION: noun, proper singular
+
+TOKEN: is
+=====
+TAG: VBZ        POS: AUX
+EXPLANATION: verb, 3rd person singular present
+```
+*.tag_* displays a fine-grained tag.
+*.pos_* displays a coarse-grained tag, which is a reduced version of the fine-grained tags
+
+*spacy.explain()* to give descriptive details about a particular POS tag, which can be a valuable reference tool.
+
