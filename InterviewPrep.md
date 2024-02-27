@@ -19,3 +19,37 @@ if fluff hobbies skip, if the hobby is technical, it not only boosts your actual
 
 # miti projects?
 
+# Technical Questions
+
+- Try to talk about the problem
+- Try to solve the problem on your own
+- write the code on paper
+- Test your code on paper
+- Type your paper code as it is in to a computer
+
+Core Data Structures, Algorithms and Concepts
+
+Find a ds that can be used to store users in platforms like LinkedIn.
+- Simplify the problem, forget about millions fo users; construct graph as each person as node;edge between two nodes that they are friends. Use  BFS; DFS finds a path but not the shortest path; bi directional bfs is better: one from source and anotheer from destination.
+
+How would you test a pen?
+- ask questiions like who will use it? 
+Interviewer: childer
+- what will they be doing with it? Will they be writing or drawing?
+Interviewer: drawing
+- where ?
+interviewer: on cloth
+- Tip of the pen?
+interviewer: ball pen
+- Will it wash off?
+interviewer: yep
+- Okay as I understand it, we have a pen that is being targeted at 5-10 years old. Teh pen has a felt tip and comes in red, green, blue and black
+
+Fact check
+Intended use
+Safety
+Unintended Uses
+
+Manual Testing Vs Automated Testing
+
+At the end of the conversation, prioritize on what is important.
