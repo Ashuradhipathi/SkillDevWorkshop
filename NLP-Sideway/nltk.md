@@ -61,11 +61,22 @@ Stop words are words that you want to ignore, so you filter them out of your tex
 
 Filtered out a few words like 'am' and 'a', but you also filtered out 'not', which does affect the overall meaning of the sentence. 
 
+I' is a pronoun, which are context words rather than content words:
 
-    'I' is a pronoun, which are context words rather than content words:
+- Content words give you information about the topics covered in the text or the sentiment that the author has about those topics.
 
-        Content words give you information about the topics covered in the text or the sentiment that the author has about those topics.
+- Context words give you information about writing style. You can observe patterns in how authors use context words in order to quantify their writing style. Once you’ve quantified their writing style, you can analyze a text written by an unknown author to see how closely it follows a particular writing style so you can try to identify who the author is.
+# Stemming
+Stemming is a text processing task in which you reduce words to their root, which is the core part of a word. 
+```python
+>>> from nltk.stem import PorterStemmer
+>>> from nltk.tokenize import word_tokenize
+>>> stemmer = PorterStemmer()
+>>> string_for_stemming = """
+... The crew of the USS Discovery discovered many discoveries.
+... Discovering is what explorers do."""
+>>> words = word_tokenize(string_for_stemming)
+>>> stemmed_words = [stemmer.stem(word) for word in words]
 
-        Context words give you information about writing style. You can observe patterns in how authors use context words in order to quantify their writing style. Once you’ve quantified their writing style, you can analyze a text written by an unknown author to see how closely it follows a particular writing style so you can try to identify who the author is.
-
+```
     'not' is technically an adverb but has still been included in NLTK’s list of stop words for English. If you want to edit the list of stop words to exclude 'not' or make other changes, then you can [download it](https://www.nltk.org/nltk_data/).
