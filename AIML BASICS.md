@@ -20,4 +20,20 @@ ML algorithms are divided into folllowing:
 | AI | ML| 
 AI is the broad concept of machines that perform the task in a away similar to a human, AI is classified into one or multiple fundamental groups common to system design or autonomous vehicles.
 ML is the current application of AI that would surround around the idea of machne saccessing the data and learning themselves. In general AI are sytems which run or handle the taksk.
-A new subset of machine learning called deep learning uses neural networks and algorithms to process the data in an effort to train these neural networks for sepcific intent.
+A new subset of machine learning called deep learning uses neural networks and algorithms to process the data in an effort to train these neural networks for specific intent.
+
+AI subsets:
+- Explainable AI
+- Generative AI
+
+
+
+Generative AI is the form of creating new content such as text, image, audio, video which does by learning from existing data then uses that knowledge to generate new and unique outputs
+
+Prompt: It is the short piece of text that is given to large language models as input and it can be used to control output of the model in many ways. 
+Hallucinations are defined as data that is not enough for the context or not enough training
+
+
+The generative AI model could be trained on dataste of images and used to generate new images , and descriptive 
+
+The foundational model is a large AI model pretrained on vast quantity of data that is designed to adapative to a wide range of down stream tasks such as structuring, image captioning and image detection
