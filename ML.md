@@ -39,3 +39,9 @@ In clustering: K-means, Hierarchical clustering
 - tensorflow
 
 - OpenCV
+
+## SAupervising methodology
+- select model
+- Train(determine parameters)
+- Test model
+- Move model to production
