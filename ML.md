@@ -9,4 +9,10 @@ Unsupervised learning:
 - Data reduction : project features to fewer features
 
 
-Reinforcement learning:
+Reinforcement learning
+
+
+In machine learning  ,
+In regression, the following are the different techniques - Ridge regresion, SVM, Random forest, Neural networks
+In classification, Naive Bayes, SVM, NN
+In clustering: K-means, Hierarchical clustering
