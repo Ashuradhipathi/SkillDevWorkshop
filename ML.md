@@ -45,3 +45,5 @@ In clustering: K-means, Hierarchical clustering
 - Train(determine parameters)
 - Test model
 - Move model to production
+
+Write a program to implement inear regression, Bayes probablistic model, KNN mechanism, Random Forest
