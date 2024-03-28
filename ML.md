@@ -47,3 +47,7 @@ In clustering: K-means, Hierarchical clustering
 - Move model to production
 
 Write a program to implement inear regression, Bayes probablistic model, KNN mechanism, Apriori , Random Forest
+
+
+Backpropogation
+![Algorithm](https://i.ibb.co/GRX2tjx/20240328-115246.jpg)
