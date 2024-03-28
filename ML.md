@@ -40,7 +40,7 @@ In clustering: K-means, Hierarchical clustering
 
 - OpenCV
 
-## SAupervising methodology
+## Supervising methodology
 - select model
 - Train(determine parameters)
 - Test model
