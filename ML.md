@@ -46,4 +46,4 @@ In clustering: K-means, Hierarchical clustering
 - Test model
 - Move model to production
 
-Write a program to implement inear regression, Bayes probablistic model, KNN mechanism, Random Forest
+Write a program to implement inear regression, Bayes probablistic model, KNN mechanism, Apriori , Random Forest
